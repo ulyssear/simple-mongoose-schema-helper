@@ -1,10 +1,15 @@
 {
   "name": "just-render",
+  "author": "ulyssear",
   "version": "1.0.0",
   "description": "Generates HTMLElement from string",
   "main": "index.js",
   "directories": {
     "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexdinesh/npm-module-boilerplate.git"
   },
   "scripts": {
     "dev": "npm run development",
@@ -15,8 +20,6 @@
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "private": true,
-  "author": "Liigem",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.3",
