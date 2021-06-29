@@ -12,7 +12,7 @@ Import the package inside your project.
 ```js
 // You have the choice between these two lines below.
 
-import render from '<package name>'
+import render from 'just-render'
 ```
 
 Write your HTML code by calling render function.

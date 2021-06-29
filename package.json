@@ -3,7 +3,7 @@
   "author": "ulyssear <ulysse.arnaud@liigem.io>",
   "version": "1.0.0",
   "description": "Generates HTMLElement from string",
-  "main": "index.js",
+  "main": "build/index.js",
   "directories": {
     "example": "example"
   },
