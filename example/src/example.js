@@ -1,3 +1,4 @@
+import render from 'just-render'
 
 document.addEventListener(event => {
 
