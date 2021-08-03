@@ -1,9 +1,10 @@
 {
   "name": "just-render",
   "author": "ulyssear <ulysse.arnaud@liigem.io>",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Generates HTMLElement from string",
-  "main": "build/index.js",
+  "main": "build/index.common.js",
+  "module": "build/index.esm.js",
   "directories": {
     "example": "example"
   },
@@ -11,20 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/ulyssear/just-render.git"
   },
+  "bugs": {
+    "url": "https://github.com/ulyssear/just-render/issues"
+  },
   "homepage": "https://github.com/ulyssear/just-render#readme",
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "build": "npm run build-cjs && npm run build-umd",
+    "build-umd": "rollup src/index.js --format umd --name \"just-render\" --file build/index.esm.js",
+    "build-cjs": "rollup src/index.js --format cjs --file build/index.common.js"
   },
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.19",
-    "postcss": "^8.1.14"
+    "rollup": "^2.55.1"
   }
 }
