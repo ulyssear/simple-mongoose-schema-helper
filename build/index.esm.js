@@ -1,10 +1,9 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-    typeof define === 'function' && define.amd ? define(['exports'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['just-render'] = {}));
-}(this, (function (exports) { 'use strict';
+(function (factory) {
+    typeof define === 'function' && define.amd ? define(factory) :
+    factory();
+}((function () { 'use strict';
 
-    function render(content, ...datas) {
+    module.exports = function render(content, ...datas) {
         if (typeof content === 'object') {
             content = Array.from(content);
 
@@ -29,11 +28,6 @@
         template.innerHTML = content;
 
         return template.content.cloneNode(true)
-    }
-
-    exports['default'] = render;
-    exports.render = render;
-
-    Object.defineProperty(exports, '__esModule', { value: true });
+    };
 
 })));

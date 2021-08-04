@@ -1,8 +1,6 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function render(content, ...datas) {
+module.exports = function render(content, ...datas) {
     if (typeof content === 'object') {
         content = Array.from(content);
 
@@ -27,7 +25,4 @@ function render(content, ...datas) {
     template.innerHTML = content;
 
     return template.content.cloneNode(true)
-}
-
-exports['default'] = render;
-exports.render = render;
+};

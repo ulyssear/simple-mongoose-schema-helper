@@ -1,4 +1,4 @@
-export function render(content, ...datas) {
+module.exports = function render(content, ...datas) {
     if (typeof content === 'object') {
         content = Array.from(content)
 
@@ -24,5 +24,3 @@ export function render(content, ...datas) {
 
     return template.content.cloneNode(true)
 }
-
-export default render
