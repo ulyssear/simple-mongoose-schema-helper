@@ -26,3 +26,5 @@ export function render(content, ...datas) {
 }
 
 export default render
+
+exports.render = render
