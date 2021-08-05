@@ -9,14 +9,14 @@ module.exports = function render(content, ...datas) {
                 content[index][line] = content[index][line].trim()
             }
 
-            content[index] = content[index].join('').trim()
+            content[index] = content[index].join(' ').trim()
 
             let data = datas.shift()
 
             if (undefined !== data) content[index] += data
         }
 
-        content = content.join('')
+        content = content.join(' ')
     }
 
     const template = document.createElement('template')
