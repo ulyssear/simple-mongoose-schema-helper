@@ -1,13 +1,10 @@
 {
   "name": "just-render",
   "author": "ulyssear <ulysse.arnaud@liigem.io>",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Generates HTMLElement from string",
-  "main": "build/index.common.js",
-  "module": "build/index.esm.js",
-  "directories": {
-    "example": "example"
-  },
+  "main": "./build/index.common.js",
+  "module": "./build/index.esm.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ulyssear/just-render.git"
