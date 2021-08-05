@@ -1,7 +1,7 @@
 {
   "name": "just-render",
   "author": "ulyssear <ulysse.arnaud@liigem.io>",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generates HTMLElement from string",
   "main": "./build/index.common.js",
   "module": "./build/index.esm.js",
