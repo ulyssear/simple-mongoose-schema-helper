@@ -6,7 +6,7 @@ module.exports = function render(content, ...datas) {
             content[index] = content[index].replace("\r\n", "\n").split("\n")
 
             for (let line in content[index]) {
-                content[index][line] = content[index][line].trim()
+                content[index][line] = content[index][line]
             }
 
             content[index] = content[index].join(' ')
@@ -16,7 +16,7 @@ module.exports = function render(content, ...datas) {
             if (undefined !== data) content[index] += data
         }
 
-        content = content.join(' ')
+        content = content.join(' ').trim()
     }
 
     const template = document.createElement('template')
