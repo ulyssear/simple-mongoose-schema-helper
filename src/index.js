@@ -9,7 +9,7 @@ module.exports = function render(content, ...datas) {
                 content[index][line] = content[index][line].trim()
             }
 
-            content[index] = content[index].join(' ').trim()
+            content[index] = content[index].join(' ')
 
             let data = datas.shift()
 
