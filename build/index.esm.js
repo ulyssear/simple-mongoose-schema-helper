@@ -27,7 +27,9 @@
         const template = document.createElement('template');
         template.innerHTML = content;
 
-        return template.content.cloneNode(true)
+        const fragment = template.content.cloneNode(true);
+
+        return [fragment.firstChild, fragment][+(1 < fragment.childNodes)]
     };
 
 })));
