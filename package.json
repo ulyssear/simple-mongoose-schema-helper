@@ -1,20 +1,20 @@
 {
-  "name": "just-render",
+  "name": "simple-mongoose-schema-helper",
   "author": "ulyssear <ulysse.arnaud@liigem.io>",
-  "version": "1.0.12",
-  "description": "Build elements from string",
+  "version": "0.0.1",
+  "description": "Simple assistant pour la construction de schémas avec Mongoose.",
   "module": "./build/index.esm.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ulyssear/just-render.git"
+    "url": "git+https://github.com/ulyssear/simple-mongoose-schema-helper.git"
   },
   "bugs": {
-    "url": "https://github.com/ulyssear/just-render/issues"
+    "url": "https://github.com/ulyssear/simple-mongoose-schema-helper/issues"
   },
-  "homepage": "https://github.com/ulyssear/just-render#readme",
+  "homepage": "https://github.com/ulyssear/simple-mongoose-schema-helper#readme",
   "scripts": {
     "build": "npm run build-cjs && npm run build-umd",
-    "build-umd": "rollup src/index.js --format umd --name \"just-render\" --file build/index.esm.js",
+    "build-umd": "rollup src/index.js --format umd --name \"simple-mongoose-schema-helper\" --file build/index.esm.js",
     "build-cjs": "rollup src/index.js --format cjs --file build/index.common.js"
   },
   "publishConfig": {
